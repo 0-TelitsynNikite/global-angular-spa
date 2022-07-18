@@ -6,7 +6,9 @@ const routes: Routes = [
   {path: 'b2c', loadChildren: () => import('./domains/b2c/b2c.module').then(md => md.B2cModule)},
   {path: 'design', loadChildren: () => import('./domains/design/design.module').then(md => md.DesignModule)},
   {path: 'boxes', loadChildren: () => import('./domains/boxes/boxes.module').then(md => md.BoxesModule)},
-  {path: 'games', loadChildren: () => import('./domains/games/games.module').then(md => md.GamesModule)}
+  {path: 'games', loadChildren: () => import('./domains/games/games.module').then(md => md.GamesModule)},
+  {path: 'network', loadChildren: () => import('./domains/network/network.module').then(md => md.NetworkModule)},
+  {path: 'admin', loadChildren: () => import('./domains/admin/admin.module').then(md => md.AdminModule)}
 ];
 
 @NgModule({
