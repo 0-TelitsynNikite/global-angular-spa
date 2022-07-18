@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+}
+
+.header {
+  flex: 1 1;
+  width: 200px;
+  height: 800px;
+  background-color: #e3e3e3;
+  padding-top: 30px;
+
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      font-size: 30px;
+      color: #252525;
+    }
+  }
+}
+
+.main {
+  flex: 25 1;
+  width: 800px;
+  height: 800px;
+  background-color: lightblue;
+}

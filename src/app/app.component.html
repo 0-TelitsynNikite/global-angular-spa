@@ -1,4 +1,14 @@
-<h1>{{'HOME.TITLE' | translate}}</h1>
+<header class="header">
+  <nav class="header-list">
+    <a routerLink="" class="bi bi-box-fill"></a>
+    <a routerLink="" class="bi bi-collection-fill"></a>
+    <a routerLink="" class="bi bi-inbox"></a>
+    <a routerLink="" class="bi bi-globe2"></a>
+    <a routerLink="" class="bi bi-joystick"></a>
+    <a routerLink="" class="bi bi-stack"></a>
+  </nav>
+</header>
 
-<button (click)="translate.use('ru')">{{'BUTTON.LANG.RU' | translate}}</button>
-<button (click)="translate.use('eng')">{{'BUTTON.LANG.ENG' | translate}}</button>
+<main class="main">
+  <router-outlet></router-outlet>
+</main>
