@@ -1,0 +1,12 @@
+{
+  "HOME": {
+    "TITLE": "Hello",
+    "WELCOME": "WELCOME"
+  },
+  "BUTTON": {
+    "LANG": {
+      "RU": "Russian",
+      "ENG": "English"
+    }
+  }
+}
