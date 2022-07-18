@@ -4,8 +4,11 @@
 
 .header {
   flex: 1 1;
-  width: 200px;
-  height: 800px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
   background-color: #e3e3e3;
   padding-top: 30px;
 
@@ -17,14 +20,16 @@
 
     a {
       font-size: 30px;
-      color: #252525;
+      color: #343434;
+      &:hover {
+        color: #3e8285;
+        transition: all 0.25s;
+      }
     }
   }
 }
 
 .main {
   flex: 25 1;
-  width: 800px;
-  height: 800px;
-  background-color: lightblue;
+  margin-left: 50px;
 }

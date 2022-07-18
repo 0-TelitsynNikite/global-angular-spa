@@ -1,14 +1,19 @@
 <header class="header">
   <nav class="header-list">
-    <a routerLink="" class="bi bi-box-fill"></a>
-    <a routerLink="" class="bi bi-collection-fill"></a>
-    <a routerLink="" class="bi bi-inbox"></a>
-    <a routerLink="" class="bi bi-globe2"></a>
-    <a routerLink="" class="bi bi-joystick"></a>
-    <a routerLink="" class="bi bi-stack"></a>
+    <a routerLink="/boxes" class="bi bi-box-fill"></a>
+    <a routerLink="/b2c" class="bi bi-collection-fill"></a>
+    <a routerLink="/b2b" class="bi bi-inbox"></a>
+    <a routerLink="/network" class="bi bi-globe2"></a>
+    <a routerLink="/games" class="bi bi-joystick"></a>
+    <a routerLink="/design" class="bi bi-stack"></a>
   </nav>
 </header>
 
 <main class="main">
   <router-outlet></router-outlet>
 </main>
+
+<!--<h1>{{'HOME.TITLE' | translate}}</h1>-->
+
+<!--<button (click)="translate.use('ru')">{{'BUTTON.LANG.RU' | translate}}</button>-->
+<!--<button (click)="translate.use('eng')">{{'BUTTON.LANG.ENG' | translate}}</button>-->
