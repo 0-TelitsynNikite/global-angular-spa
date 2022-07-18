@@ -7,6 +7,11 @@
     <a routerLink="/games" class="bi bi-joystick"></a>
     <a routerLink="/design" class="bi bi-stack"></a>
   </nav>
+
+  <select (change)="onChangeLang($event)">
+    <option value="ru">RU</option>
+    <option value="eng">EN</option>
+  </select>
 </header>
 
 <main class="main">

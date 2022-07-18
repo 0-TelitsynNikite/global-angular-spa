@@ -1,1 +1,9 @@
-<h1>Admin</h1>
+<form class="form" [formGroup]="myForm" (submit)="onSubmit(myForm)">
+  <app-main-title [title]='"TITLE.MAKE_DEAL.TITLE" | translate' [span]='"TITLE.MAKE_DEAL.SPAN" | translate'></app-main-title>
+  <input type="text" formControlName="dealType" [placeholder]='"INPUT.PLACEHOLDER.TYPE_OF_DEAL" | translate'>
+  <input type="text" formControlName="dealTitle" [placeholder]='"INPUT.PLACEHOLDER.TITLE_OF_DEAL" | translate'>
+  <input type="text" formControlName="dealPrice" [placeholder]='"INPUT.PLACEHOLDER.PRICE_OF_DEAL" | translate'>
+  <input type="text" formControlName="personName" [placeholder]='"INPUT.PLACEHOLDER.NAME_OF_PERSON" | translate'>
+  <input type="email" formControlName="personEmail" [placeholder]='"INPUT.PLACEHOLDER.EMAIL_OF_PERSON" | translate'>
+  <button>{{"BUTTON.SUBMIT" | translate}}</button>
+</form>

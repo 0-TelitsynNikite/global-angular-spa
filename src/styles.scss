@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700;800&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,15 @@
   text-decoration: none;
   list-style: none;
   font-family: 'Lato', sans-serif;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }

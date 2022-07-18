@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 :host {
   display: flex;
 }
@@ -9,8 +11,12 @@
   bottom: 0;
   left: 0;
   width: 50px;
-  background-color: #e3e3e3;
-  padding-top: 30px;
+  background-color: $header-background;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   .header-list {
     display: flex;
@@ -20,12 +26,21 @@
 
     a {
       font-size: 30px;
-      color: #343434;
+      color: $link-color;
       &:hover {
-        color: #3e8285;
+        color: $link-color-hover;
         transition: all 0.25s;
       }
     }
+  }
+
+  select {
+    background-color: $select-background-color;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: $select-text-color;
+    border: none;
   }
 }
 

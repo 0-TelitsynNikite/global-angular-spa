@@ -1,12 +1,24 @@
 {
-  "HOME": {
-    "TITLE": "Привет",
-    "WELCOME": "Добро пожаловать"
-  },
   "BUTTON": {
     "LANG": {
       "RU": "Русский",
       "ENG": "Английский"
+    },
+    "SUBMIT": "Отправить"
+  },
+  "INPUT": {
+    "PLACEHOLDER": {
+      "TYPE_OF_DEAL": "Тип сделки",
+      "TITLE_OF_DEAL": "Название сделки",
+      "PRICE_OF_DEAL": "Цена сделки",
+      "NAME_OF_PERSON": "Имя заказчика",
+      "EMAIL_OF_PERSON": "Email заказчика"
+    }
+  },
+  "TITLE": {
+    "MAKE_DEAL": {
+      "TITLE": "Создать новую",
+      "SPAN": "сделку"
     }
   }
 }

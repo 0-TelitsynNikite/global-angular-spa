@@ -7,6 +7,22 @@
     "LANG": {
       "RU": "Russian",
       "ENG": "English"
+    },
+    "SUBMIT": "Submit"
+  },
+  "INPUT": {
+    "PLACEHOLDER": {
+      "TYPE_OF_DEAL": "Type of deal",
+      "TITLE_OF_DEAL": "Title of deal",
+      "PRICE_OF_DEAL": "Price of deal",
+      "NAME_OF_PERSON": "Name of person",
+      "EMAIL_OF_PERSON": "Email of person"
+    }
+  },
+  "TITLE": {
+    "MAKE_DEAL": {
+      "TITLE": "Make a",
+      "SPAN": "new deal"
     }
   }
 }

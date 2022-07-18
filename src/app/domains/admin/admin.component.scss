@@ -1,0 +1,31 @@
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  input {
+    width: 500px;
+    background-color: #3e8285;
+    padding: 10px 0 10px 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+
+    &::placeholder {
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 16px;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2e83ab;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
