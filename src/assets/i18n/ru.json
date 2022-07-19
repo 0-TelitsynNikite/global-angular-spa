@@ -13,7 +13,19 @@
       "PRICE_OF_DEAL": "Цена сделки",
       "NAME_OF_PERSON": "Имя заказчика",
       "EMAIL_OF_PERSON": "Email заказчика"
-    }
+    },
+    "SELECT": {
+      "OPTIONS": {
+        "B2B": "B2B",
+        "B2C": "B2C",
+        "DESIGN": "Дизайн",
+        "BOXES": "Коробки",
+        "GAMES": "Игры",
+        "NETWORK": "Сеть",
+        "DEFAULT_NAME": "Выберите тип сделки"
+      }
+    },
+    "NOT_VALID": "Не валидно"
   },
   "TITLE": {
     "MAKE_DEAL": {

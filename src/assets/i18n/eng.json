@@ -17,7 +17,19 @@
       "PRICE_OF_DEAL": "Price of deal",
       "NAME_OF_PERSON": "Name of person",
       "EMAIL_OF_PERSON": "Email of person"
-    }
+    },
+    "SELECT": {
+      "OPTIONS": {
+        "B2B": "B2B",
+        "B2C": "B2C",
+        "DESIGN": "Design",
+        "BOXES": "Boxes",
+        "GAMES": "Games",
+        "NETWORK": "Network",
+        "DEFAULT_NAME": "Choose a type of deal"
+      }
+    },
+    "NOT_VALID": "It's not valid"
   },
   "TITLE": {
     "MAKE_DEAL": {

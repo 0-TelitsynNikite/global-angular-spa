@@ -1,9 +1,29 @@
 <form class="form" [formGroup]="myForm" (submit)="onSubmit(myForm)">
   <app-main-title [title]='"TITLE.MAKE_DEAL.TITLE" | translate' [span]='"TITLE.MAKE_DEAL.SPAN" | translate'></app-main-title>
-  <input type="text" formControlName="dealType" [placeholder]='"INPUT.PLACEHOLDER.TYPE_OF_DEAL" | translate'>
-  <input type="text" formControlName="dealTitle" [placeholder]='"INPUT.PLACEHOLDER.TITLE_OF_DEAL" | translate'>
-  <input type="text" formControlName="dealPrice" [placeholder]='"INPUT.PLACEHOLDER.PRICE_OF_DEAL" | translate'>
-  <input type="text" formControlName="personName" [placeholder]='"INPUT.PLACEHOLDER.NAME_OF_PERSON" | translate'>
-  <input type="email" formControlName="personEmail" [placeholder]='"INPUT.PLACEHOLDER.EMAIL_OF_PERSON" | translate'>
+  <select formControlName="dealType">
+    <option disabled>{{"INPUT.SELECT.OPTIONS.DEFAULT_NAME" | translate}}</option>
+    <option value="b2b">{{"INPUT.SELECT.OPTIONS.B2B" | translate}}</option>
+    <option value="b2c">{{"INPUT.SELECT.OPTIONS.B2C" | translate}}</option>
+    <option value="boxes">{{"INPUT.SELECT.OPTIONS.BOXES" | translate}}</option>
+    <option value="design">{{"INPUT.SELECT.OPTIONS.DESIGN" | translate}}</option>
+    <option value="games">{{"INPUT.SELECT.OPTIONS.GAMES" | translate}}</option>
+    <option value="network">{{"INPUT.SELECT.OPTIONS.NETWORK" | translate}}</option>
+  </select>
+  <div class="form-group">
+    <input type="text" formControlName="dealTitle" [placeholder]='"INPUT.PLACEHOLDER.TITLE_OF_DEAL" | translate'>
+    <span class="invalid" *ngIf="myForm.controls['dealTitle'].invalid && myForm.controls['dealTitle'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+  </div>
+  <div class="form-group">
+    <input type="text" formControlName="dealPrice" [placeholder]='"INPUT.PLACEHOLDER.PRICE_OF_DEAL" | translate'>
+    <span class="invalid" *ngIf="myForm.controls['dealPrice'].invalid && myForm.controls['dealPrice'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+  </div>
+  <div class="form-group">
+    <input type="text" formControlName="personName" [placeholder]='"INPUT.PLACEHOLDER.NAME_OF_PERSON" | translate'>
+    <span class="invalid" *ngIf="myForm.controls['personName'].invalid && myForm.controls['personName'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+  </div>
+  <div class="form-group">
+    <input type="email" formControlName="personEmail" [placeholder]='"INPUT.PLACEHOLDER.EMAIL_OF_PERSON" | translate'>
+    <span class="invalid" *ngIf="myForm.controls['personEmail'].invalid && myForm.controls['personEmail'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+  </div>
   <button>{{"BUTTON.SUBMIT" | translate}}</button>
 </form>

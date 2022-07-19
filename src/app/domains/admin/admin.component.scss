@@ -5,7 +5,7 @@
   align-items: center;
   gap: 40px;
 
-  input {
+  select {
     width: 500px;
     background-color: #3e8285;
     padding: 10px 0 10px 20px;
@@ -13,11 +13,33 @@
     font-weight: 700;
     font-size: 16px;
     outline: none;
+  }
 
-    &::placeholder {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input {
+      width: 500px;
+      background-color: #3e8285;
+      padding: 10px 0 10px 20px;
       color: #ffffff;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 16px;
+      outline: none;
+
+      &::placeholder {
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 16px;
+      }
+    }
+
+    .invalid {
+      color: red;
+      font-size: 12px;
+      margin-left: 20px;
     }
   }
 
