@@ -17,6 +17,9 @@ import {MainTitleComponent} from "../../components/main-title/main-title.compone
     AdminRoutingModule,
     TranslateModule
   ],
+  exports: [
+    MainTitleComponent
+  ],
   providers: []
 })
 export class AdminModule { }

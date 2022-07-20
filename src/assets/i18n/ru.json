@@ -4,7 +4,10 @@
       "RU": "Русский",
       "ENG": "Английский"
     },
-    "SUBMIT": "Отправить"
+    "SUBMIT": "Отправить",
+    "SIGN_IN": "Войти",
+    "SIGN_UP": "Зарегистрироваться",
+    "LOGOUT": "Выйти"
   },
   "INPUT": {
     "PLACEHOLDER": {
@@ -12,7 +15,9 @@
       "TITLE_OF_DEAL": "Название сделки",
       "PRICE_OF_DEAL": "Цена сделки",
       "NAME_OF_PERSON": "Имя заказчика",
-      "EMAIL_OF_PERSON": "Email заказчика"
+      "EMAIL_OF_PERSON": "Email заказчика",
+      "SIGN_IN_EMAIL": "Введите свой email",
+      "SIGN_IN_PASSWORD": "Введите свой пароль"
     },
     "SELECT": {
       "OPTIONS": {
@@ -31,6 +36,12 @@
     "MAKE_DEAL": {
       "TITLE": "Создать новую",
       "SPAN": "сделку"
-    }
+    },
+    "SIGN_IN": "Войти",
+    "WELCOME": "Привет, что нового?"
+  },
+  "MODAL": {
+    "SIGN_IN_TITLE": "Войти",
+    "SIGN_UP_TITLE": "Зарегистрироваться"
   }
 }

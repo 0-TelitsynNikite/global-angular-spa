@@ -22,3 +22,17 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.invalid {
+  color: red;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.active {
+  visibility: visible;
+}
+
+.inactive {
+  visibility: hidden;
+}

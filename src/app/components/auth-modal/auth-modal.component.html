@@ -1,0 +1,18 @@
+<div class="modal" (click)="changeToggle($event)">
+  <form class="form" [formGroup]="myForm" (submit)="onSignIn(myForm)">
+    <div class="bi bi-x-lg button-close"></div>
+    <app-main-title class="title" [span]='"MODAL.SIGN_IN_TITLE" | translate'></app-main-title>
+    <div class="form-group">
+      <input class="input" type="text" formControlName="userEmail" [placeholder]='"INPUT.PLACEHOLDER.SIGN_IN_EMAIL" | translate'>
+      <span class="invalid" *ngIf="myForm.controls['userEmail'].invalid && myForm.controls['userEmail'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+    </div>
+    <div class="form-group">
+      <input class="password" type="text" formControlName="userPassword" [placeholder]='"INPUT.PLACEHOLDER.SIGN_IN_PASSWORD" | translate'>
+      <span class="invalid" *ngIf="myForm.controls['userPassword'].invalid && myForm.controls['userPassword'].touched">{{"INPUT.NOT_VALID" | translate}}</span>
+    </div>
+    <div class="button-wrapper">
+      <button class="sign-in-button" type="submit" [disabled]="myForm.invalid">{{"BUTTON.SIGN_IN" | translate}}</button>
+      <button (click)="changeNav($event)" class="sign-up-button" type="button">{{"BUTTON.SIGN_UP" | translate}}</button>
+    </div>
+  </form>
+</div>

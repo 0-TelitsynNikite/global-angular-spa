@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -35,12 +36,6 @@
         font-size: 16px;
       }
     }
-
-    .invalid {
-      color: red;
-      font-size: 12px;
-      margin-left: 20px;
-    }
   }
 
   button {
@@ -49,5 +44,14 @@
     background-color: #2e83ab;
     color: #ffffff;
     font-weight: 700;
+
+    &:hover {
+      background-color: #334d73;
+      transition: background-color 0.2s;
+    }
+    &:disabled {
+      background: #a2a2a2;
+      color: white;
+    }
   }
 }

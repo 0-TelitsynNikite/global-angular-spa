@@ -1,14 +1,13 @@
 {
-  "HOME": {
-    "TITLE": "Hello",
-    "WELCOME": "WELCOME"
-  },
   "BUTTON": {
     "LANG": {
       "RU": "Russian",
       "ENG": "English"
     },
-    "SUBMIT": "Submit"
+    "SUBMIT": "Submit",
+    "SIGN_IN": "Sign in",
+    "SIGN_UP": "Sign up",
+    "LOGOUT": "Log out"
   },
   "INPUT": {
     "PLACEHOLDER": {
@@ -16,7 +15,9 @@
       "TITLE_OF_DEAL": "Title of deal",
       "PRICE_OF_DEAL": "Price of deal",
       "NAME_OF_PERSON": "Name of person",
-      "EMAIL_OF_PERSON": "Email of person"
+      "EMAIL_OF_PERSON": "Email of person",
+      "SIGN_IN_EMAIL": "Enter your email",
+      "SIGN_IN_PASSWORD": "Enter your password"
     },
     "SELECT": {
       "OPTIONS": {
@@ -35,6 +36,12 @@
     "MAKE_DEAL": {
       "TITLE": "Make a",
       "SPAN": "new deal"
-    }
+    },
+    "SIGN_IN": "Sign in",
+    "WELCOME": "Hey, what's up?"
+  },
+  "MODAL": {
+    "SIGN_IN_TITLE": "Sign in",
+    "SIGN_UP_TITLE": "Sign up"
   }
 }

@@ -6,6 +6,7 @@
     <a routerLink="/network" class="bi bi-globe2"></a>
     <a routerLink="/games" class="bi bi-joystick"></a>
     <a routerLink="/design" class="bi bi-stack"></a>
+    <a routerLink="/admin">A</a>
   </nav>
 
   <select (change)="onChangeLang($event)">
@@ -15,5 +16,11 @@
 </header>
 
 <main class="main">
+  <div class="button-wrapper">
+    <button (click)="changeModal()" class="signin" [disabled]="isSignedIn">{{"BUTTON.SIGN_IN" | translate}}</button>
+    <button (click)="logout()" class="logout" [disabled]="!isSignedIn">{{"BUTTON.LOGOUT" | translate}}</button>
+  </div>
   <router-outlet></router-outlet>
 </main>
+
+<app-auth-modal [class.active]="isModal" [class.inactive]="!isModal" (onChanged)="onSignIn($event)"></app-auth-modal>
